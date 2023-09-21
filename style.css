@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: #222;
+}
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg , rgb(171, 234, 245) , rgb(99, 129, 175) , rgb(70, 76, 95));
+    color: #fff;
+    border-radius: 20px;
+    margin: 100px auto 0;
+    padding: 40px 35px;
+    text-align: center;
+    border: none;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -21px;
+}
+.search input{
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    color: #555;
+    padding: 0 0 0 10px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    width: 70%;
+    font-size: 28px;
+}
+.search svg{
+    height: 40px;
+    width: 40px;
+    font-size: 10px;
+    margin: 10px 20px;
+    
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col{
+   display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 20px;
+}
+.col img{
+    height: 50px;
+    margin-right: 5px;
+}
+
+p{
+    font-size: 15px;
+    margin: 10px 0;
+    margin-top: 0px;
+    padding: 0;
+}
+.weather{
+    display: none;
+}
+.erorr{
+    text-align: left;
+    margin: 30px 0 0 10px;
+    font-size: 30px;
+    display: none;
+}

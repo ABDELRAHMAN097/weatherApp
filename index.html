@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>hliw</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App Using JavaScript</title>
+    <link
+      href="https://fastly.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="enter cety name" spellcheck="false" />
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search btn-serch" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg> 
+      </div>
+      <div class="erorr">
+        <p>invalid city name</p>
+      </div>
+      <div class="weather">
+        <img src="images/rain.png" class="weather-icon">
+        <h1 class="temp"></h1>
+        <h2 class="city">city</h2>
+
+        
+        <div class="details">
+          <!-- Humidity -->
+          <div class="col">
+            <img src="images/humidity.png" alt="humidity">
+            
+            <div class="pragr">
+
+              <p class="humidity">%</p>
+              <p>Humidity</p>
+
+            </div>
+          </div>
+            <!-- wind -->
+            <div class="col">
+              <img src="images/wind.png" alt="humidity">
+             
+              <div class="pragr">
+
+                <p class="wind">km/h</p>
+                <p>Wind Speed</p>
+
+              </div>
+          </div>
+        
+      </div>
+    </div>
+    <script src="main.js" ></script>
+  </body>
 </html>
